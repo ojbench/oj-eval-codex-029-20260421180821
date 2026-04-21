@@ -13,14 +13,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/vendor/malloclab-handout)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 add_executable(code
-  vendor/malloclab-handout/mdriver.c
-  vendor/malloclab-handout/memlib.c
-  vendor/malloclab-handout/fsecs.c
-  vendor/malloclab-handout/fcyc.c
-  vendor/malloclab-handout/ftimer.c
-  vendor/malloclab-handout/clock.c
-  src/mm.c
+  src/main.c
 )
 
 target_compile_definitions(code PRIVATE NDEBUG)
-
